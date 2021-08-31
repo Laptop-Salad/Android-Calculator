@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/ramabhadra"
+        android:padding="2dp"
+        android:text="@string/zero"
+        android:textAlignment="textEnd"
+        android:textColor="@color/gray"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Row 1 -->
+            <Button
+                android:layout_marginEnd="5dp"
+                android:layout_column="2"
+                android:layout_row="0" />
+
+            <Button
+                android:layout_column="2"
+                android:layout_marginEnd="5dp"
+                android:layout_row="0" />
+
+            <Button
+                android:id="@+id/btn_ac"
+                android:layout_column="2"
+                android:layout_marginEnd="5dp"
+                android:layout_row="0"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/ac"/>
+
+
+            <Button
+                android:id="@+id/btn_divide"
+                android:layout_column="3"
+                android:layout_marginEnd="5dp"
+                android:layout_row="0"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/divide"/>
+
+            <!-- Row 2 -->
+            <Button
+                android:id="@+id/btn_four"
+                android:layout_column="0"
+                android:layout_marginEnd="5dp"
+                android:layout_row="2"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/four"/>
+
+            <Button
+                android:id="@+id/btn_five"
+                android:layout_marginEnd="5dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/five"/>
+
+            <Button
+                android:id="@+id/btn_six"
+                android:layout_column="2"
+                android:layout_marginEnd="5dp"
+                android:layout_row="2"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/six"/>
+
+            <Button
+                android:id="@+id/btn_times"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="@color/white"
+                android:text="@string/times"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/misty_blue" />
+
+            <!-- Row 3 -->
+            <Button
+                android:id="@+id/btn_seven"
+                android:layout_column="0"
+                android:layout_marginEnd="5dp"
+                android:layout_row="1"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/seven"/>
+
+            <Button
+                android:id="@+id/btn_eight"
+                android:layout_marginEnd="5dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/eight"/>
+
+            <Button
+                android:id="@+id/btn_nine"
+                android:layout_column="2"
+                android:layout_marginEnd="5dp"
+                android:layout_row="1"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/nine"/>
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_column="3"
+                android:layout_marginEnd="5dp"
+                android:layout_row="2"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/minus"/>
+
+            <!-- Row 4 -->
+
+            <Button
+                android:id="@+id/btn_one"
+                android:layout_column="0"
+                android:layout_marginEnd="5dp"
+                android:layout_row="3"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/one"/>
+
+            <Button
+                android:id="@+id/btn_two"
+                android:layout_marginEnd="5dp"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/two"/>
+
+            <Button
+                android:id="@+id/btn_three"
+                android:layout_column="2"
+                android:layout_marginEnd="5dp"
+                android:layout_row="3"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/three"/>
+
+            <Button
+                android:id="@+id/btn_plus"
+                android:layout_column="3"
+                android:layout_marginEnd="5dp"
+                android:layout_row="3"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/plus"/>
+
+            <!-- Row 5 -->
+            <Button
+                android:id="@+id/btn_empty1"
+                android:layout_column="0"
+                android:layout_marginEnd="5dp"
+                android:layout_row="4"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white" />
+
+            <Button
+                android:id="@+id/btn_zero"
+                android:layout_column="1"
+                android:layout_marginEnd="5dp"
+                android:layout_row="4"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/zero"/>
+
+            <Button
+                android:id="@+id/btn_point"
+                android:layout_column="2"
+                android:layout_marginEnd="5dp"
+                android:layout_row="4"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/point"/>
+
+            <Button
+                android:id="@+id/btn_equals"
+                android:layout_column="3"
+                android:layout_marginEnd="5dp"
+                android:layout_row="4"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/misty_blue"
+                android:backgroundTint="@color/white"
+                android:text="@string/equals"/>
+
+
+        </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
